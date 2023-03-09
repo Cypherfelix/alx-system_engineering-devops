@@ -1,0 +1,13 @@
+1.	Switch to user betty: su betty - This script switches the current user to the user "betty" using the su command.
+2.	Print current username: echo $USER - This script prints the effective username of the current user using the $USER environment variable.
+3.	Print all groups current user is part of: groups - This script prints all the groups the current user is a member of using the groups command.
+4.	Change owner of file "hello" to user "betty": chown betty hello - This script changes the owner of the file "hello" to the user "betty" using the chown command.
+5.	Create an empty file called "hello": touch hello - This script creates an empty file called "hello" in the current working directory using the touch command.
+6.	Add execute permission to owner of file "hello": chmod u+x hello - This script adds execute permission to the owner of the file "hello" using the chmod command and the u+x option.
+7.	Add execute permission to owner and group owner, and read permission to other users, for file "hello": chmod ugo+x,o+r hello - This script adds execute permission to the owner and group owner, and read permission to other users, for the file "hello" using the chmod command and the ugo+x,o+r option.
+8.	Add execute permission to owner, group owner, and other users for file "hello": chmod a+x hello - This script adds execute permission to the owner, group owner, and other users for the file "hello" using the chmod command and the a+x option.
+9.	Set permissions for file "hello" to owner: no permission, group: no permission, other users: all permissions: chmod 007 hello - This script sets the permissions for the file "hello" so that the owner has no permissions, the group has no permissions, and all other users have all permissions using the chmod command and the 007 option.
+10.	Set mode of file "hello" to -rwxr-x-wx 1 julien julien 23 Sep 20 14:25 hello: chmod 753 hello - This script sets the mode of the file "hello" to -rwxr-x-wx 1 julien julien 23 Sep 20 14:25 hello using the chmod command and the 753 option.
+11.	Set mode of file "hello" to be the same as file "olleh": chmod --reference=olleh hello - This script sets the mode of the file "hello" to be the same as the file "olleh" using the chmod command and the --reference=olleh option.
+12.	Add execute permission to all subdirectories of the current directory for the owner, group owner, and all other users: find . -type d -exec chmod 755 {} \; - This script uses the find command to locate all subdirectories in the current directory, and then uses the chmod command to add execute permission to the owner, group owner, and all other users for each directory found.
+
