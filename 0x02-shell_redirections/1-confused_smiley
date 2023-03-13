@@ -1,5 +1,2 @@
 #!/bin/bash
-julien@ubuntu:/tmp/h$ ./1-confused_smiley 
-"(Ôo)'
-julien@ubuntu:/tmp/h$ 
-(why?)
+echo "(Ôo)'"
