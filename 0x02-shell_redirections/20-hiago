@@ -1,5 +1,2 @@
 #!/bin/bash
-julien@ubuntu:/tmp/0x02$ echo Chicago | ./20-hiago 
-hiago
-julien@ubuntu:/tmp/0x02$ 
-(why?)
+tr -d c | tr -d C
